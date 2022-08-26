@@ -1,9 +1,14 @@
+import { ProjectCard } from "./ProjectCard"
+
 export const Projects = () => {
   return (
     <section>
-      <h2>
-        A Few Projects That I've Worked On!
-      </h2>
+      <ProjectCard
+        projectName="Melbourne Pedestrian Density"
+        projectDescription="hello"
+        projectTech="javascript, d3"
+        projectLink={"https://ashsobeck.github.io/melbourne-pedestrian-visualization/"}
+      />
     </section>
-  );
+  )
 }
