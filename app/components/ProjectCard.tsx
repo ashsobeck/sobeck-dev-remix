@@ -8,7 +8,7 @@ export type ProjectCardProps = {
 export const ProjectCard = (props: ProjectCardProps) => {
   return (
     <div
-      className="bg-slate-100 max-w-md mx-auto rounded-lg shadow-xl overflow-hidden sm:max-w-2xl ring-1 ring-slate-900/5"
+      className="bg-slate-100 max-w-md mx-auto rounded-lg shadow-xl overflow-hidden sm:max-w-2xl ring-1 ring-slate-900/5 hover:ring-2 hover:ring-violet-300"
     >
       <div
         className="md:flex-row p-6 2xl:p-8 space-y-2"
@@ -24,7 +24,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
         >
           {props.projectTech}
         </div>
-        <a href={props.projectLink}>{props.projectLink}</a>
+        <a className="underline text-indigo-700 " href={props.projectLink}>{props.projectLink}</a>
       </div>
     </div>
   );
