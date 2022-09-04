@@ -2,7 +2,7 @@ import { ProjectCard } from "./ProjectCard"
 
 export const Projects = () => {
   return (
-    <section className="flex-col max-w-full justify-around p-1 mx-auto">
+    <section className="flex flex-row flex-wrap w-full p-3 my-3 bg-slate-700">
       <ProjectCard
         projectName="Melbourne Pedestrian Density"
         projectDescription="hello"
