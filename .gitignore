@@ -10,6 +10,7 @@ node_modules
 /prisma/data.db-journal
 /app/static/resume.aux
 /app/static/resume.log
+/app/static/resume.out
 /app/static/*.gz
 
 /app/styles/tailwind.css
