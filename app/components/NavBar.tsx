@@ -19,7 +19,7 @@ export const NavBar = () => {
   return (
     <header
       className=
-      "header hidden overflow-hidden print:hidden md:block"
+      "header hidden overflow-hidden print:hidden md:block absolute"
     >
       <div
         className="mx-auto flex h-full w-full items-center justify-evenly md:text-xl font-sans font-semibold "
@@ -32,7 +32,7 @@ export const NavBar = () => {
         </button>
         <div className="flex-1 md:hidden" />
 
-        <nav className="flex h-full flex-col md:flex-row space-x-4">
+        <nav className="flex h-full w-fill flex-col md:flex-row space-x-4">
           <NavLink
             className={linkClasses}
             to="/"

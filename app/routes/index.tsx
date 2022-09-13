@@ -12,7 +12,11 @@ export default function Index() {
         className=" w-full"
       >
         <Hero />
-        <Projects />
+        <div
+          className="w-inherit flex justify-center items-center"
+        >
+          <Projects />
+        </div>
       </div>
 
     </main>

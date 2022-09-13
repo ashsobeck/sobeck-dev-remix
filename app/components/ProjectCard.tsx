@@ -8,23 +8,24 @@ export type ProjectCardProps = {
 export const ProjectCard = (props: ProjectCardProps) => {
   return (
     <div
-      className="bg-slate-100 max-w-md mx-4 my-4 rounded-lg shadow-xl overflow-hidden sm:max-w-2xl ring-1 ring-slate-900/5 hover:ring-2 hover:ring-violet-300 max-h-md"
+      className="bg-slate-100 max-w-md h-auto mx-4 my-4 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-900/5 hover:ring-2 hover:ring-violet-300 "
     >
       <div
         className="p-5 2xl:p-8 space-y-2"
       >
-        <div className="font-medium text-xl leading-6 text-indigo-600">
-          {props.projectName}
+        <div className="underline font-medium text-xl leading-6 text-indigo-600" >
+          <a href={props.projectLink}>{props.projectName}</a>
         </div>
-        <p>
-          {props.projectDescription}
+        {/* TODO: clean up
+            this is absolutely not the correct way to do things, it would honestly be best to have it's own component or data type. 
+            right now its *okay* since things are static, but not ideal.  */}
+        <p dangerouslySetInnerHTML={{__html: props.projectDescription}}>
         </p>
         <div
           className="flex-col"
         >
-          {props.projectTech}
+          <span className="text-indigo-700 font-bold">Technologies:</span> {props.projectTech}
         </div>
-        <a className="underline text-indigo-700 " href={props.projectLink}>{props.projectLink}</a>
       </div>
     </div>
   );
