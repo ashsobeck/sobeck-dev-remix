@@ -8,5 +8,9 @@ node_modules
 /cypress/videos
 /prisma/data.db
 /prisma/data.db-journal
+/app/static/resume.aux
+/app/static/resume.log
+/app/static/resume.out
+/app/static/*.gz
 
 /app/styles/tailwind.css

@@ -1,7 +1,7 @@
 export const Hero = () => {
   return (
     <section
-      className="flex flex-col border border-t-2 w-full h-full items-center m-auto relative"
+      className="flex flex-col w-full h-full items-center  relative"
     >
       <h2 className="inline-block">
         <div

@@ -22,13 +22,13 @@ export const NavBar = () => {
       "header hidden overflow-hidden print:hidden md:block"
     >
       <div
-        className="mx-auto flex h-full w-full max-w-5xl items-center justify-evenly md:text-sm font-sans font-semibold border-b-2"
+        className="mx-auto flex h-full w-full items-center justify-evenly md:text-xl font-sans font-semibold "
       >
         <button
           onClick={toggleMenu}
           type="button"
         >
-          open menu
+          sobeck.dev
         </button>
         <div className="flex-1 md:hidden" />
 

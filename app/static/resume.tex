@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper,sans,colorlinks, urlcolor=black]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\moderncvhead{1}
+\usepackage[scale=0.75, top=1cm, bottom=1cm]{geometry}
+\usepackage{fontawesome5}
+\firstname{Ashton}
+\familyname{Sobeck}
+\address{Greenville, SC}
+\email{ashton@sobeck.dev}
+\extrainfo{\faGithub \space \href{https://github.com/ashsobeck/}{github.com/ashsobeck}}
+\nopagenumbers{}
+\begin{document}	
+	\makecvtitle
+	\vspace*{-15mm}
+	\section{Education}
+		\cventry{GPA: 3.75}{Clemson University}{M.S. Computer Science}{2022}{}{}
+		\cventry{GPA: 3.90}{Clemson University}{B.S. Computer Science}{2018 - 2021}{}{}
+	\section{Skills}
+		\cvline{Languages and Frameworks}{Dart, Java, ReactJS, Remix, TypeScript, YAML, C/C++}
+		\cvline{Technologies and Idealogies}{AWS, AGILE, Git, Infrastructure as Code}
+	\section{Projects}
+		\cvline{}{\textbf{Can PCA Reduce Dataset Size While Keeping Great CNN Performance?} \hfill \href{https://github.com/ashsobeck/cpsc8420finalproject}{\faGithub}}
+		\cvlistitem{We wanted to see if applying PCA to the CIFAR10 dataset as an input to a CNN would produce satisfactory results while keeping the dataset size low}
+		\cvlistitem{We used \textbf{Python} and \textbf{Keras} to create, train, and visualize the results from our models.}
+		
+		\cvlistitem{We found that compressing 81.25\% (6 of 32 principal components) of the data resulted in on par or just below image clasification performance of using the full dataset.}
+		
+		\cvline{}{\textbf{Melbourne Pedestrian Density}\hfill\href{https://github.com/ashsobeck/melbourne-pedestrian-visualization}{\faGithub}}
+		\cvlistitem{Utilizing deck.gl and d3.js, we visualized the pedestrian density of Melbourne, Australia to show the busiest areas of the city at different times of the day.}
+		\cvlistitem{We gave the user the option to compare different streets of Melbourne in which a comparative chart graphic would populate on the user's screen.}
+
+		\cvline{}{\textbf{Sobeck.dev} \hfill \href{https://github.com/ashsobeck/sobeck-dev-remix}{\faGithub}}
+		\cvlistitem{Created using the Remix framework, this hosts my portfolio and other projects I have.}
+	\section{Experience}
+		\cventry{}{Workiva}{Intern - Software Engineer}{Jan 2022 - Present}{}{}
+		\cvlistitem{Created a robust performance testing framework that enhanced knowledge of changes to the system's performance.} 
+		\cvlistitem{Took on frontend and backend stories to increase my knowledge of the product.}
+
+		\cventry{}{Clemson CCIT}{Cloud Intern}{May 2020 - December 2021}{}{}
+		\cvlistitem{Utilized AWS CloudFormation, Lambda and scripts to help support the Atlassian suite to maximize availability and minimize costs.}
+		\cvlistitem{Switched QA environment to Spot Instances resulting in 25\% monthly costs savings.}
+
+		\cventry{}{Infor}{DevOps Intern}{June 2021 - August 2021}{}{}
+		\cvlistitem{Automated manual processes resulting in a time reduction of 70\%.}
+		\cvlistitem{Replicated existing architecture into CloudFormation templates.}
+		\cventry{}{NIWC PAC}{Full Stack Developer Intern}{May 2020 - October 2020}{}{}
+		\cvlistitem{Learned fundamental principles of frontend, backend, and API development.}
+		\cvlistitem{Engaged in pair programming and other AGILE practices.}
+\end{document}
