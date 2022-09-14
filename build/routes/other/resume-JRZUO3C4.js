@@ -1,0 +1,1 @@
+import{b as m,d as s}from"/build/_shared/chunk-NNE7662T.js";var e=m(s());function i(){return(0,e.jsx)("main",{className:"relative min-h-screen bg-white sm:flex sm:items-center sm:justify-center",children:(0,e.jsx)("div",{className:"w-full min-h-screen",children:(0,e.jsx)("embed",{src:"/static/resume.pdf",className:"w-full h-[98vh]"})})})}export{i as default};
