@@ -14,26 +14,31 @@ export const NavBar = () => {
     console.log(closed);
   }
 
-  const linkClasses = "flex justify-items-center text-yellow-500 hover:text-yellow-400 font-sans h-full"
+  const openResume = () => {
+    window.open('/public/static/resume.pdf');
+  }
+
+  const linkClasses = "flex justify-items-center text-slate-500 hover:text-sky-400 font-sans h-full"
 
   return (
     <header
       className=
-      "header hidden overflow-hidden print:hidden md:block absolute"
+      "header hidden overflow-hidden print:hidden md:block"
     >
       <div
-        className="mx-auto flex h-full w-full items-center justify-evenly md:text-xl font-sans font-semibold "
+        className="mx-auto flex h-full w-full items-center justify-evenly md:text-xl font-sans font-semibold"
       >
-        <button
+        <NavLink
           onClick={toggleMenu}
+          to="/"
           type="button"
         >
           sobeck.dev
-        </button>
+        </NavLink>
         <div className="flex-1 md:hidden" />
 
         <nav className="flex h-full w-fill flex-col md:flex-row space-x-4">
-          <NavLink
+          {/* <NavLink
             className={linkClasses}
             to="/"
             onClick={onClose}
@@ -47,12 +52,11 @@ export const NavBar = () => {
             onClick={onClose}
           >
             Portfolio
-          </NavLink>
+          </NavLink> */}
 
           <NavLink
             className={linkClasses}
-            to="/"
-            onClick={onClose}
+            to="/other/resume"
           >
             Resume
           </NavLink>

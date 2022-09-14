@@ -4,12 +4,17 @@ export const Projects = () => {
   return (
     <section className="w-full p-3 my-3 ">
       <div
-        className="text-4xl font-bold text-slate-500"
+        className="flex flex-row items-start justify-center"
       >
-        Some of My Projects...
+        <div
+          className="text-4xl font-bold text-slate-500 "
+        >
+          Some of My Projects...
+        </div>
       </div>
+      
       <div
-        className="flex flex-row flex-wrap p-3 my-3 justify-center align-items-start"
+        className="flex flex-row flex-wrap p-3 my-3 justify-center items-start"
       >
         <div className="flex-initial">
 
@@ -39,12 +44,11 @@ export const Projects = () => {
           />
           <ProjectCard
             projectName="Melbourne Pedestrian Density"
-            projectDescription="<ul class='list-disc list-inside'>
+            projectDescription="<ul class='list-disc list-inside'~>
               <li>Using publicly available data on the pedestrian densities in the streets of Melbourne, Australia, we made visualization of the data.</li>
               <li> Utilizing d3.js on top of deck.gl, an intuitive and beautiful visualization was created. More information is available on the website!</li>
             </ul>"
-            projectTech="JavaScript, d3, deck.gl
-            </ul>"
+            projectTech="JavaScript, d3, deck.gl"
             projectLink={"https://ashsobeck.github.io/melbourne-pedestrian-visualization/"}
           />
         </div>
