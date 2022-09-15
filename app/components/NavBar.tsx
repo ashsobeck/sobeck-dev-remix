@@ -1,5 +1,6 @@
 import { NavLink } from "@remix-run/react";
 import { useState } from "react";
+import { links } from "~/root";
 
 
 export const NavBar = () => {
@@ -15,7 +16,14 @@ export const NavBar = () => {
   }
 
   const openResume = () => {
-    window.open('/public/static/resume.pdf');
+    window.open('/static/resume.pdf', '_blank');
+    const resume = document.createElement("a");
+    resume.href = '/static/resume.pdf';
+    // resume.download = 'AshtonSobeckResume.pdf';
+    document.body.appendChild(resume);
+    resume.click();
+    document.body.removeChild(resume);
+
   }
 
   const linkClasses = "flex justify-items-center text-slate-500 hover:text-sky-400 font-sans h-full"
@@ -53,14 +61,22 @@ export const NavBar = () => {
           >
             Portfolio
           </NavLink> */}
-
-          <NavLink
+          <div>
+            <NavLink
+              className={linkClasses}
+              to="/resume"
+            >
+              Resume
+              
+            </NavLink>
+            
+          </div>
+          {/* <button
             className={linkClasses}
-            to="/other/resume"
           >
-            Resume
-          </NavLink>
-
+              <a download="AshtonSobeckResume.pdf" href="/static/resume.pdf">download</a>
+          </button> */}
+          
           <NavLink
             className={linkClasses}
             to="/"
