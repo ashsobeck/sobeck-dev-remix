@@ -19,7 +19,7 @@ export const NavBar = () => {
     window.open('/static/resume.pdf', '_blank');
     const resume = document.createElement("a");
     resume.href = '/static/resume.pdf';
-    // resume.download = 'AshtonSobeckResume.pdf';
+    resume.download = 'AshtonSobeckResume.pdf';
     document.body.appendChild(resume);
     resume.click();
     document.body.removeChild(resume);
@@ -31,7 +31,7 @@ export const NavBar = () => {
   return (
     <header
       className=
-      "header hidden overflow-hidden print:hidden md:block"
+      "header hidden overflow-hidden print:hidden md:block position"
     >
       <div
         className="mx-auto flex h-full w-full items-center justify-evenly md:text-xl font-sans font-semibold"
