@@ -61,13 +61,16 @@ export const NavBar = () => {
           >
             Portfolio
           </NavLink> */}
-          <NavLink
-            to="/resume"
+          <a
+            href="static/resume.pdf"
+            download="AshtonSobeckResume.pdf"
+            // className={linkClasses}
+
             // onClick={openResume}
           >
             Resume
             
-          </NavLink>
+          </a>
             
           {/* <button
             className={linkClasses}
