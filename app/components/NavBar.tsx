@@ -61,16 +61,14 @@ export const NavBar = () => {
           >
             Portfolio
           </NavLink> */}
-          <div>
-            <NavLink
-              className={linkClasses}
-              to="/resume"
-            >
-              Resume
-              
-            </NavLink>
+          <NavLink
+            to="/resume"
+            // onClick={openResume}
+          >
+            Resume
             
-          </div>
+          </NavLink>
+            
           {/* <button
             className={linkClasses}
           >
@@ -78,7 +76,6 @@ export const NavBar = () => {
           </button> */}
           
           <NavLink
-            className={linkClasses}
             to="/"
             onClick={onClose}
           >

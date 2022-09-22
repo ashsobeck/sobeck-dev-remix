@@ -6,9 +6,7 @@ function hydrate() {
   React.startTransition(() => {
     hydrateRoot(
       document,
-      <React.StrictMode>
-        <RemixBrowser />
-      </React.StrictMode>
+      <RemixBrowser />
     );
   });
 }

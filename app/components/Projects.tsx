@@ -44,7 +44,7 @@ export const Projects = () => {
           />
           <ProjectCard
             projectName="Melbourne Pedestrian Density"
-            projectDescription="<ul class='list-disc list-inside'~>
+            projectDescription="<ul class='list-disc list-inside'>
               <li>Using publicly available data on the pedestrian densities in the streets of Melbourne, Australia, we made visualization of the data.</li>
               <li> Utilizing d3.js on top of deck.gl, an intuitive and beautiful visualization was created. More information is available on the website!</li>
             </ul>"
