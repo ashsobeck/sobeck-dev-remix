@@ -11,6 +11,6 @@ node_modules
 /public/static/resume.aux
 /public/static/resume.log
 /public/static/resume.out
-/public/static/*.gz
+/public/static/resume.synctex.gz
 
 /app/styles/tailwind.css
